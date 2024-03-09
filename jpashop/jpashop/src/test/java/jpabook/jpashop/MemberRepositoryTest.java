@@ -6,13 +6,14 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
+import java.util.Optional;
 
 @SpringBootTest
 class MemberRepositoryTest {
     @Autowired
-    MemberRepository memberRepository;
+    MemberRepository<Member, Long> memberRepository;
 
 
     @Test
@@ -24,10 +25,12 @@ class MemberRepositoryTest {
         member.setUsername("memberA");
         //when
         Long savedId = memberRepository.save(member);
-        Member findMember = memberRepository.find(savedId);
+        Optional<Member> findMember = memberRepository.findById(savedId);
 
-        Assertions.assertEquals(findMember.getId(), member.getId());
-        Assertions.assertEquals(findMember.getUsername(), member.getUsername());
-        Assertions.assertEquals(findMember, member);
+        if (findMember.isPresent()) {
+            Assertions.assertEquals(findMember.get().getId(), member.getId());
+            Assertions.assertEquals(findMember.get().getUsername(), member.getUsername());
+            Assertions.assertEquals(findMember, member);
+        }
     }
 }

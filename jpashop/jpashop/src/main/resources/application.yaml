@@ -2,14 +2,14 @@ spring:
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
-    generate-ddl: false
+    generate-ddl: true
     hibernate:
       ddl-auto: create-drop
-    show-sql: false
+    show-sql: true
     open-in-view: false
     properties:
       hibernate:
-        show_sql: false
+        show_sql: true
         format_sql: false
         use_sql_comments: false
   datasource:
