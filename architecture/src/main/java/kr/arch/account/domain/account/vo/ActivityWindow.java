@@ -1,11 +1,9 @@
 package kr.arch.account.domain.account.vo;
 
 import kr.arch.account.domain.activity.Activity;
-import lombok.Value;
 
 import java.util.List;
 
-@Value
 public record ActivityWindow(List<Activity> activities) {
     public Money calculateBalance(AccountId accountId) {
         Money depositBalance = activities.stream()
@@ -17,7 +15,6 @@ public record ActivityWindow(List<Activity> activities) {
                 .filter(a -> a.getSourceAccountId().equals(accountId))
                 .map(Activity::getMoney)
                 .reduce(Money.ZERO, Money::add);
-
         return Money.add(depositBalance, withdrawalBalance.negate());
     }
 }
