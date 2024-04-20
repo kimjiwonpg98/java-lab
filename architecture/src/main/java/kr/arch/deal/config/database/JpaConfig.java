@@ -1,4 +1,4 @@
-package kr.arch.account.config.database;
+package kr.arch.deal.config.database;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

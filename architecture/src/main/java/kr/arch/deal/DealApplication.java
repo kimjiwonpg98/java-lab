@@ -1,13 +1,13 @@
-package kr.arch.account;
+package kr.arch.deal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AccountApplication {
+public class DealApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AccountApplication.class, args);
+		SpringApplication.run(DealApplication.class, args);
 	}
 
 }

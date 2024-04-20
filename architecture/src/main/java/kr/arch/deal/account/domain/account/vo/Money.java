@@ -1,4 +1,4 @@
-package kr.arch.account.domain.account.vo;
+package kr.arch.deal.account.domain.account.vo;
 
 import java.math.BigInteger;
 

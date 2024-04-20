@@ -1,4 +1,4 @@
-package kr.arch.account.config.database;
+package kr.arch.deal.config.database;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;

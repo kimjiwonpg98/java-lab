@@ -1,4 +1,4 @@
-package kr.arch.account.config.database;
+package kr.arch.deal.config.database;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 import org.springframework.transaction.support.TransactionSynchronizationManager;

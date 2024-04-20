@@ -1,10 +1,10 @@
-package kr.arch.account;
+package kr.arch.deal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AccountApplicationTests {
+class DealApplicationTests {
 
 	@Test
 	void contextLoads() {

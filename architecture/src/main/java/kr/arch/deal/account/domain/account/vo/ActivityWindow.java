@@ -1,6 +1,6 @@
-package kr.arch.account.domain.account.vo;
+package kr.arch.deal.account.domain.account.vo;
 
-import kr.arch.account.domain.activity.Activity;
+import kr.arch.deal.account.domain.activity.Activity;
 
 import java.util.List;
 

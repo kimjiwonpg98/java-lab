@@ -1,8 +1,8 @@
-package kr.arch.account.domain.account;
+package kr.arch.deal.account.domain.account;
 
-import kr.arch.account.domain.account.vo.ActivityWindow;
-import kr.arch.account.domain.account.vo.Money;
-import kr.arch.account.domain.account.vo.AccountId;
+import kr.arch.deal.account.domain.account.vo.ActivityWindow;
+import kr.arch.deal.account.domain.account.vo.Money;
+import kr.arch.deal.account.domain.account.vo.AccountId;
 import lombok.Value;
 
 @Value

@@ -1,4 +1,4 @@
-package kr.arch.account.config.database;
+package kr.arch.deal.config.database;
 
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,11 +1,11 @@
-package kr.arch.account.domain.activity;
+package kr.arch.deal.account.domain.activity;
 
 import java.time.LocalDateTime;
 
-import kr.arch.account.domain.account.vo.Money;
-import kr.arch.account.domain.account.Account;
-import kr.arch.account.domain.account.vo.AccountId;
-import kr.arch.account.domain.activity.vo.ActivityId;
+import kr.arch.deal.account.domain.account.vo.Money;
+import kr.arch.deal.account.domain.account.Account;
+import kr.arch.deal.account.domain.account.vo.AccountId;
+import kr.arch.deal.account.domain.activity.vo.ActivityId;
 import lombok.Getter;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
