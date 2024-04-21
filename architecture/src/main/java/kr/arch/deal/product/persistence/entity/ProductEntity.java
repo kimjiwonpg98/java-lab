@@ -1,6 +1,7 @@
 package kr.arch.deal.product.persistence.entity;
 
 import jakarta.persistence.*;
+import kr.arch.deal.account.persistence.UserEntity;
 import lombok.Getter;
 
 import java.math.BigDecimal;
@@ -21,5 +22,5 @@ public class ProductEntity {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private kr.arch.deal.account.persistence.User User;
+    private UserEntity User;
 }
