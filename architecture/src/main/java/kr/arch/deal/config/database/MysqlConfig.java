@@ -7,6 +7,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @EnableJpaRepositories(basePackages = "kr.arch")
-@EntityScan(basePackages = "kr.arch.entity")
+@EntityScan(basePackages = "kr.arch")
 @ComponentScan(basePackages = "kr.arch")
 public class MysqlConfig {}

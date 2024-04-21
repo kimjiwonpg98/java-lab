@@ -1,12 +1,11 @@
-package kr.arch.deal.product.persistence;
+package kr.arch.deal.product.persistence.entity;
 
 import jakarta.persistence.*;
-import kr.arch.deal.account.persistence.UserEntity;
 import lombok.Getter;
 
 import java.math.BigDecimal;
 
-@Entity
+@Entity(name = "product")
 @Getter
 public class ProductEntity {
 
@@ -21,7 +20,6 @@ public class ProductEntity {
     private BigDecimal price;
 
     @ManyToOne
-    @Column(nullable = false, name = "user_id")
     @JoinColumn(name = "user_id")
-    private UserEntity User;
+    private kr.arch.deal.account.persistence.User User;
 }

@@ -3,7 +3,7 @@ package kr.arch.deal.account.persistence;
 import jakarta.persistence.*;
 import lombok.Getter;
 
-@Entity
+@Entity(name = "user")
 @Getter
 public class UserEntity {
     @Id()

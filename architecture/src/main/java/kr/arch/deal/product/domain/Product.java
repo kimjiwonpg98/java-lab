@@ -3,13 +3,16 @@ package kr.arch.deal.product.domain;
 import kr.arch.deal.product.domain.vo.ProductAmount;
 import kr.arch.deal.product.domain.vo.ProductId;
 import kr.arch.deal.product.domain.vo.ProductOwnerId;
-import lombok.Value;
+import kr.arch.deal.product.persistence.entity.ProductEntity;
+import lombok.Data;
+import lombok.Setter;
 
-@Value
+@Data
+@Setter
 public class Product {
-    ProductId id;
+    private ProductId id;
 
-    ProductAmount amount;
+    private ProductAmount amount;
 
-    ProductOwnerId userId;
+    private ProductOwnerId userId;
 }
