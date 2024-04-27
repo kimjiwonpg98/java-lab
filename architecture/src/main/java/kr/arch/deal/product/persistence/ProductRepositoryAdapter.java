@@ -4,6 +4,7 @@ import kr.arch.deal.product.domain.Product;
 import kr.arch.deal.product.domain.vo.ProductAmount;
 import kr.arch.deal.product.domain.vo.ProductId;
 import kr.arch.deal.product.domain.vo.ProductOwnerId;
+import kr.arch.deal.product.domain.vo.ProductPrice;
 import kr.arch.deal.product.infrastructure.ProductRepository;
 import kr.arch.deal.product.persistence.entity.ProductEntity;
 import org.springframework.stereotype.Component;
@@ -21,9 +22,11 @@ public class ProductRepositoryAdapter implements ProductRepository {
         ProductId id = new ProductId(entity.getId());
         ProductAmount amount = new ProductAmount(entity.getAmount());
         ProductOwnerId userId = new ProductOwnerId(entity.getUser().getId());
+        ProductPrice price = new ProductPrice(entity.getPrice().stripTrailingZeros());
         product.setId(id);
         product.setAmount(amount);
         product.setUserId(userId);
+        product.setPrice(price);
 
         return product;
     }
